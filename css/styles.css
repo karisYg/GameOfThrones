@@ -2,3 +2,48 @@
     background-color: #636057;
     border-color: #7d7a6f;
 }
+
+div#window{
+	height: 200px;
+	background-color: azure;
+}	
+span.playerone{
+	    padding: 20px;
+    background-color: #0f5d5d;
+    border: 1px solid antiquewhite;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+span.playerone:hover{
+	background-color: #635f57;
+}
+
+span.playertwo{
+	    padding: 20px;
+    background-color: #0000006e;
+    border: 1px solid antiquewhite;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+span.playertwo:hover{
+	background-color: #635f57;
+}
+/* span#output{
+    -webkit-animation: myfirst 5s; 
+    animation: myfirst 5s;	
+}
+
+
+@-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
+}
+
+
+@keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
+}
+ */
