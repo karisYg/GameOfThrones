@@ -6,34 +6,34 @@
 
 ## Description
 
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
 
-This is a simple Javascript todolist, The user Adds their username to get Access to Add his Todos.
+	This a Simple Pig Dice JavaScript Game, The user is just required to add their username and starts playing the game by rolling for score.
 
 ## Setup/Installation Requirements
 
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+* You can either clone the repository from Github,or download and extract files.
+* Locate the index.html file.
+* Open it with Yor favorite web browser.
+* Start Playing the Game!
 
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+
+This  Is just a simple web based game , it does not require any dependancies  installed , You also don't need a web server or a database . You also not required to run a web server. Its just a simple basic webpage.
 
 ## Known Bugs
 
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+
+ Currently there exist no known bugs in this System.
 
 ## Technologies Used
 
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+ The User Interface of this Simple game is built using HTML5 & CSS , also bootstrap Framework has been used for page layout. The business logic of the game is build on Javascript, and Jquery. Javascript objects constructors and prototypes have been  emphised on in the code
 
 ## Support and contact details
 
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+If you run in to any issues email me at kariukipeter30@gmail.com
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) {year} **{List of contributors or company name}**
+
+Copyright (c) {2017} **Peter Kariuki Mutuura :karisYG**

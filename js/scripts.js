@@ -35,10 +35,15 @@ $(document).ready(function() {
 			//alert(randone);
 		}
 	});
-
 	$("#spanplayertwo").click(function(){
 		var playertwo =$("#inputplayertwo").val();
 		$("#usertwo").text(playertwo);
 	});
 	
 });
+
+
+
+
+
+
