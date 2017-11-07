@@ -1,3 +1,9 @@
+swal({
+  title: "You've Arrived!",
+  text: "To Pig Dice Game!",
+  icon: "success",
+  button: "Yiss, Proceed!",
+});
 $(document).ready(function(){
 
 	$("#labelone").text("Username");
@@ -11,7 +17,8 @@ $(document).ready(function(){
 				$("#rolloneresult").text("...");
 				$("#totalscore").text("...");
 				all_score= [];
-				total=0;		
+				total=0;
+				$("#rollplayerone").show();		
 	});
 	$("#inputplayertwo").click(function(){
 		$(this).val("");
@@ -106,6 +113,8 @@ $(document).ready(function(){
 					total=0;
 					$("#rolloneresult").text(turnnow);
 					$("#totalscore").text(total);
+					$("#rollplayerone").hide();
+					swal('Any fool can use a computer,You Lost!!');
 				}
 	
 

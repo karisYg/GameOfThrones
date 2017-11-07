@@ -53,6 +53,10 @@ span#rollplayertwo{
 span#rollplayertwo:hover{
 	background-color: #635f57;
 }
+h1#h1rule{
+    margin-top: 0px;
+    font-family: 'Permanent Marker', cursive;
+}
 /* span#output{
     -webkit-animation: myfirst 5s; 
     animation: myfirst 5s;	
