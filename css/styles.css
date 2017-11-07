@@ -7,7 +7,7 @@ div#window{
 	height: 200px;
 	background-color: azure;
 }	
-span.playerone{
+span#spanplayerone{
 	    padding: 20px;
     background-color: #0f5d5d;
     border: 1px solid antiquewhite;
@@ -15,11 +15,22 @@ span.playerone{
     color: white;
     cursor: pointer;
 }
-span.playerone:hover{
+span#spanplayerone:hover{
 	background-color: #635f57;
 }
-
-span.playertwo{
+span#rollplayerone{
+	    padding: 20px;
+    background-color: #0f5d5d;
+    border: 1px solid antiquewhite;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+span#rollplayerone:hover{
+	background-color: #635f57;
+}
+/* rollplayerone */
+span#spanplayertwo{
 	    padding: 20px;
     background-color: #0000006e;
     border: 1px solid antiquewhite;
@@ -27,7 +38,19 @@ span.playertwo{
     color: white;
     cursor: pointer;
 }
-span.playertwo:hover{
+span#spanplayertwo:hover{
+	background-color: #635f57;
+}
+/* rollplayertwo */
+span#rollplayertwo{
+	    padding: 20px;
+    background-color: #0000006e;
+    border: 1px solid antiquewhite;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+span#rollplayertwo:hover{
 	background-color: #635f57;
 }
 /* span#output{
