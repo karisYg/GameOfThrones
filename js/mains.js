@@ -20,8 +20,16 @@ $(document).ready(function(){
 				total=0;
 				$("#rollplayerone").show();		
 	});
+
+
 	$("#inputplayertwo").click(function(){
 		$(this).val("");
+		$("#usertwo").text("...");
+				$("#rolltworesult").text("...");
+				$("#totalscore2").text("...");
+				all_score= [];
+				total=0;
+				$("#rollplayertwo").show();
 	});
 	
 
@@ -59,7 +67,9 @@ $(document).ready(function(){
 		return Math.floor((Math.random() * 6) + 1);
 	}
 
-	var karis = new Player("karis");
+	//var karis = new Player("karis");
+
+
 	
 
 
@@ -88,6 +98,31 @@ $(document).ready(function(){
 
 
 	});
+	//ends here
+	//player two logic
+
+	$("#spanplayertwo").click(function() {
+		var playertwo = $("#inputplayertwo").val();
+		if (playertwo==="") {
+			document.getElementById("inputplayerone").focus();
+			$("#labeltwo").css('color', 'red');
+			$("#labeltwo").text("Player name is required");
+		}else{
+			$("#labeltwo").css('color', '#07c63f');
+			$("#labeltwo").text("Current Player is.. *" +playertwo+"*");
+			$("#usertwo").text(playertwo);
+			console.log("player one:" + playertwo);	
+
+				$("#rolltworesult").text("");
+				$("#totalscore2").text("");
+				all_score= [];
+				total=0;			
+		}
+
+		// console.log("player two:" + playertwo);
+	});
+
+	//ends here
 
 	$("#rollplayerone").click(function() {
 		var playerone = $("#inputplayerone").val();
@@ -98,7 +133,8 @@ $(document).ready(function(){
 			$("#rolloneresult").text("*_*");			
 		}else{
 			$("#userone").text(playerone);
-				var turnnow=karis.roll();
+			var gamerone = new Player(playerone);
+				var turnnow=gamerone.roll();
 				 var total=0
 				if (turnnow!=0) {
 
@@ -125,21 +161,6 @@ $(document).ready(function(){
 
 	//player two logic
 
-	$("#spanplayertwo").click(function() {
-		var playertwo = $("#inputplayertwo").val();
-		if (playertwo==="") {
-			document.getElementById("inputplayerone").focus();
-			$("#labeltwo").css('color', 'red');
-			$("#labeltwo").text("Player name is required");
-		}else{
-			$("#labeltwo").css('color', '#07c63f');
-			$("#labeltwo").text("Current Player is.. *" +playertwo+"*");
-			$("#usertwo").text(playertwo);
-			console.log("player one:" + playertwo);			
-		}
-
-		console.log("player two:" + playertwo);
-	});
 
 	$("#rollplayertwo").click(function() {
 		var playertwo = $("#inputplayertwo").val();
@@ -150,7 +171,26 @@ $(document).ready(function(){
 			$("#rolltworesult").text("*_*");				
 		}else{
 			$("#usertwo").text(playertwo);
-			$("#rolltworesult").text(randomNum());
+			// $("#userone").text(playerone);
+			var gamerone = new Player(playertwo);
+				var turnnow=gamerone.roll();
+				 var total=0
+				if (turnnow!=0) {
+
+						all_score.forEach(function(onescore){
+							 total+=onescore;
+
+						});
+				$("#rolltworesult").text(turnnow);
+				$("#totalscore2").text(total);
+				}else{
+					all_score= [];
+					total=0;
+					$("#rolltworesult").text(turnnow);
+					$("#totalscore2").text(total);
+					$("#rollplayertwo").hide();
+					swal('Any fool can use a computer,You Lost!!');
+				}
 		}
 		
 	});
