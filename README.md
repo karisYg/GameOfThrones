@@ -2,12 +2,13 @@
 
 #### A simple game much dubbed Game of Thrones:Created on Friday ,November 3,2017
 
-#### By **Peter Kariuki Mutuura **
+#### By *Peter Kariuki Mutuura*
 
 ## Description
 
 
-	This a Simple Pig Dice JavaScript Game, The user is just required to add their username and starts playing the game by rolling for score.
+ This a Simple Pig Dice JavaScript Game, The user
+ is just required to add their username and starts playing the game by rolling for score.
 
 ## Setup/Installation Requirements
 

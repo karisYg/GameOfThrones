@@ -38,12 +38,15 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3" id="window" >
           <div class="col-md-6" style="height: 100%;">
-            <h3>Player one: <strong id="userone"></strong></h3>
+            <h3>Player one: <strong id="userone" style="color: #07c63f;"></strong></h3>
             <p>You have Rolled: <strong id="rolloneresult"></strong> </p>
+
+            <p>Your total score is : <strong id="totalscore"></strong></p>
             
           </div>
           <div class="col-md-6" style="border-left: 1px solid #7fff00; height: 100%;">
-            <h3>Player Two: <strong id="usertwo"></strong></h3>
+            <h3>Player Two: <strong id="usertwo" style="color: #07c63f;"></strong></h3>
+            <p>You have Rolled: <strong id="rolltworesult"></strong> </p>
 
           </div> 
         </div>
@@ -54,16 +57,17 @@
         <div class="col-md-6">
           <h2>Player One</h2>
           <div class="form-group">
-            <label for='playerone' class="text-justify">Username</label><br>
+            <label for='playerone' class="text-justify" id="labelone"></label><br>
             <input type="text" placeholder="Enter name" class="form-control" id="inputplayerone"><br><br>
             <span id="spanplayerone">add</span>&nbsp&nbsp
              <span id="rollplayerone">Roll</span>
           </div>
+
         </div>
         <div class="col-md-6">
           <h2>Player Two </h2>
           <div class="form-group">
-            <label for='playertwo'>Username</label><br>
+            <label for='playertwo' id="labeltwo"></label><br>
             <input type="text" 
             placeholder="Enter name" class="form-control" id="inputplayertwo"><br><br>
             <span id="spanplayertwo">add</span>&nbsp&nbsp
@@ -79,6 +83,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src=".https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/mains.js"></script>
   </body>
 </html>
